@@ -1,0 +1,43 @@
+<html>
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<body>
+  <h1 class="gold">The Random Quote Machine</h1>
+  <h2 class="gold">Click the New Quote button to get a random quote</h2>
+  <!--<p>Click the Tweet The Quote button to share the quote on Twitter. </p>-->
+  <div id="quoteBox">
+    <blockquote>
+      <p id="quote"></p>
+      <i id="author"></i>
+    </blockquote>
+  </div>
+  <div id='buttons'>
+    <!--click the quote button to call the api and refresh the new random quote-->
+    <a id="quoteButton" type="button">
+    New Quote</a>
+    <!--Twitter Button-->
+    <!--When clicked the button calls a jQuery function-->
+    <a href="" id="tweetLink" target="_blank"><i class="fa fa-twitter fa-2x buttons"></i></a>
+  </div>
+</body>
+</html>
+<script>
+  function parseQuote(response) {
+   var totalLength=0;
+   var tweetButton = document.getElementById('tweet');
+  document.getElementById("quote").innerHTML = response.quoteText;
+    document.getElementById("author").innerHTML = response.quoteAuthor;
+  totalLength=(response.quoteText.length + response.quoteAuthor.length) + 3;
+  document.getElementById("quoteLength").innerHTML = totalLength;
+  document.getElementById("tweetLink").href = "https://twitter.com/";
+  /*Only show twitter button if the quote and the author's name is less than 140 characters. Add another 3 characters to take into account the added quotation marks and a space before the author name*/
+  totalLength=150;
+    if (totalLength > 140) {
+    tweetLink.style.display='none';
+        } else {
+    tweetLink.style.display='block';
+        }
+    }
+</script>
+
+<script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&amp;format=jsonp&amp;lang=en&amp; jsonp=parseQuote"></script>

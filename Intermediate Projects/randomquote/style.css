@@ -1,0 +1,92 @@
+body {
+  background-color: #343436;
+  color: #181d23;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  line-height: 0.5em;
+  font-family: helvetica;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+#buttons {
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#quoteButton {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  float: left;
+  background-color: #ddc228;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #181d23;
+}
+
+#tweetLink {
+  float: right;
+  color: #ddc228;
+}
+
+#tweetLink:hover {
+  color: #f7f3cd;
+  cursor: pointer;
+}
+
+#quoteButton:hover {
+  background-color: #f7f3cd;
+  cursor: pointer;
+}
+
+blockquote {
+  font-family: 'Great Vibes', cursive;
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 2.5em;
+  line-height: 1.1em;
+  position: relative;
+  top: -20px;
+  z-index: 0;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 6.5em;
+  position: absolute;
+  left: -25px;
+  top: 150px;
+  color: #d3c2b1;
+  z-index: -1;
+}
+
+#author {
+  text-align: center;
+  font-size: .9em;
+}
+
+.gold {
+  color: #DDC228;
+}
+
+#quoteBox {
+  background-color: #f2e2d2;
+  height: 400px;
+  width: 700px;
+  margin: 0 auto;
+}
