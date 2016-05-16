@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Six+Caps);
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(http://imgur.com/GWyBM8j.jpg)
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+p {
+  color: #222;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 10em;
+  font-style: italic;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 80px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  background-color: #eee;
+  color: #888;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.nav a {
+  color: #222;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+  text-decoration: none;
+  background-color: #414448;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+#home {
+  margin: 0px;
+  height: 700px;
+}
+
+.social ul {
+  padding: 0px;
+}
+
+.social ul li {
+  padding: 0px;
+  margin: 20px;
+  display: inline;
+  list-style-type: none;
+  font-size: 1.2em;
+  font-family: 'grarmond';
+}
+
+.social ul li a {
+  background-color: orange;
+  text-decoration: none;
+  color: #444;
+  padding: 0px 7px;
+  border: 2px solid;
+  border-radius: 10px
+}
+
+#about {
+  margin: 0px;
+  padding 0px;
+}
+
+#about p,
+#about ul {
+  margin-left: 90px;
+  padding: 25px;
+  color: #222;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.round-image {
+  margin: 100px 50px 250px 200px;
+  moz-border-radius: 50%;
+  webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#portfolio {
+  padding: 50px 50px;
+}
+
+#portfolio .col-md-4 footer {
+  margin-bottom: 24px;
+  Padding: 10px;
+  height: 45px;
+  border: 2px solid #82968c;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  background-color: #B1A38C;
+}
+
+#demo-box {
+  max-width: 350px;
+}
+
+#demo-box img {
+  moz-border-top-left-radius: 3%;
+  webkit-border-top-left-radius: 3%;
+  border-top-left-radius: 3%;
+  moz-border-top-right-radius: 3%;
+  webkit-border-top-right-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+.row:first-of-type {
+  padding-top: 40px;
+}
+
+#contact {
+  margin: 0px;
+  height: 700px;
+}
+
+#contact .social ul li:first-of-type {
+  padding-top: 55px;
+  display: block;
+}
+
+#contact .social ul li {
+  font-size: 1.6em;
+}
+
+#contact p {
+  padding: 60px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#color1 {
+  margin: 50px;
+  background-color: #89b6a5;
+  width: 50px;
+  height: 50px;
+}
+
+#color2 {
+  margin: 50px;
+  background-color: #4c3b4d;
+  width: 50px;
+  height: 50px;
+}
+
+#color3 {
+  margin: 50px;
+  background-color: #c9eddc;
+  width: 50px;
+  height: 50px;
+}
+
+#color4 {
+  margin: 50px;
+  background-color: #82968c;
+  width: 50px;
+  height: 50px;
+}
+
+#color5 {
+  margin: 50px;
+  background-color: #6a706e;
+  width: 50px;
+  height: 50px;
+}
