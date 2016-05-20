@@ -1,4 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Six+Caps);
+
+/*#image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+   }
+#image-container img.pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+#image-container div.hovertext {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    background: #fff;
+    opacity: 0.6;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0px;
+}*/
 body {
   margin: 0px;
   padding: 0px;
