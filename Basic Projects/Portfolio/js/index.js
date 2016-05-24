@@ -1,13 +1,17 @@
 $(document).ready(function() {
-  $('.pic').hover(
+
+  $(".demo-box").hover(
+
     function() {
-      $('.hovertext').animate({
-        "top": "-=38px"
-      }, "slow");
+      var id = $(this).attr('id');
+    //alert(id);
+      $("#info-one").(".hovertext").animate({
+        "top": "-=140px"
+      }, "fast");
     },
     function() {
-      $('.hovertext').animate({
-        "top": "+=38px"
-      }, "slow");
+      $("#info-one").(".hovertext").animate({
+        "top": "+=140px"
+      }, "fast");
     });
 });

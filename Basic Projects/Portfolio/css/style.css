@@ -148,7 +148,7 @@ nav ul li a:hover {
   padding: 50px 50px;
 }
 
-#portfolio .col-md-4 footer {
+.col-md-4 footer {
   margin-bottom: 24px;
   Padding: 10px;
   height: 45px;
@@ -159,12 +159,33 @@ nav ul li a:hover {
   font-size: 1.2em;
   background-color: #B1A38C;
 }
-
-#demo-box {
+/*hover effect is here*/
+.demo-box {
   max-width: 350px;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
 }
+.demo.box a.img.img-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
 
-#demo-box img {
+    .demo-box .hovertext {
+        position: absolute;
+        top: 250px;
+        left: 0;
+        background: #000;
+        opacity: 0.8;
+        width: 350px;
+        color:white;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+.demo-box img {
   moz-border-top-left-radius: 3%;
   webkit-border-top-left-radius: 3%;
   border-top-left-radius: 3%;
