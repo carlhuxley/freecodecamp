@@ -1,61 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Six+Caps);
 
-/*#image-container {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-   }
-#image-container img.pic {
-    position: absolute;
-    top: 0;
-    left: 0;
-    }
-#image-container div.hovertext {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    background: #fff;
-    opacity: 0.6;
-    width: 300px;
-    text-align: center;
-    padding: 10px 0px;
-}*/
 body {
   margin: 0px;
   padding: 0px;
   background-image: url(https://cloud.githubusercontent.com/assets/19387488/15375515/6e3e84be-1d47-11e6-8700-acf394071463.jpg)
 }
-
 .container-fluid {
   padding: 0px;
 }
-
 p {
   color: #222;
   font-size: 1.15em;
   font-weight: 600;
 }
-
 h1 {
   font-family: 'Six Caps', sans-serif;
   font-size: 10em;
   font-style: italic;
 }
-
-h1,
-h2 {
+h1, h2 {
   text-align: center;
   margin-top: 0px;
   padding-top: 80px;
 }
-
 h3 {
   text-align: center;
   margin-top: 0px;
   padding: 0px;
 }
-
 nav {
   z-index: 1;
   position: fixed;
@@ -67,44 +39,35 @@ nav {
   overflow: hidden;
   width: 100%;
 }
-
 nav ul {
   margin: 0;
   text-align: center;
 }
-
 nav ul li {
   display: inline;
   list-style-type: none;
 }
-
 .nav a {
   color: #222;
   font-size: 1.3em;
   font-weight: 600;
 }
-
-.nav>li>a:focus,
-.nav>li>a:hover {
+.nav>li>a:focus, .nav>li>a:hover {
   text-decoration: none;
   background-color: #414448;
 }
-
 nav ul li a:hover {
   background-color: black;
   color: white;
   text-decoration: none;
 }
-
 #home {
   margin: 0px;
   height: 700px;
 }
-
 .social ul {
   padding: 0px;
 }
-
 .social ul li {
   padding: 0px;
   margin: 20px;
@@ -113,7 +76,6 @@ nav ul li a:hover {
   font-size: 1.2em;
   font-family: 'grarmond';
 }
-
 .social ul li a {
   background-color: orange;
   text-decoration: none;
@@ -122,32 +84,26 @@ nav ul li a:hover {
   border: 2px solid;
   border-radius: 10px
 }
-
 #about {
   margin: 0px;
   padding 0px;
 }
-
-#about p,
-#about ul {
+#about p, #about ul {
   margin-left: 90px;
   padding: 25px;
   color: #222;
   font-size: 1.15em;
   font-weight: 600;
 }
-
 .round-image {
   margin: 100px 50px 250px 200px;
   moz-border-radius: 50%;
   webkit-border-radius: 50%;
   border-radius: 50%;
 }
-
 #portfolio {
   padding: 50px 50px;
 }
-
 .col-md-4 footer {
   margin-bottom: 24px;
   Padding: 10px;
@@ -159,79 +115,63 @@ nav ul li a:hover {
   font-size: 1.2em;
   background-color: #B1A38C;
 }
-/*hover effect is here*/
-.demo-box {
-  max-width: 350px;
-  position: relative;
-  width: 350px;
-  height: 250px;
-  overflow: hidden;
+
+
+
 }
-.demo.box a.img.img-responsive {
-    position: absolute;
-    top: 0;
-    left: 0;
-    }
+/*.img img {
+  moz-border-radius: 3%;
+  webkit-border-radius: 3%;
 
-    .demo-box .hovertext {
-        position: absolute;
-        top: 250px;
-        left: 0;
-        background: #000;
-        opacity: 0.8;
-        width: 350px;
-        color:white;
-        text-align: center;
-        padding: 10px 0px;
-    }
-
-.demo-box img {
-  moz-border-top-left-radius: 3%;
-  webkit-border-top-left-radius: 3%;
-  border-top-left-radius: 3%;
-  moz-border-top-right-radius: 3%;
-  webkit-border-top-right-radius: 3%;
-  border-top-right-radius: 3%;
-}
-
+}*/
 .row:first-of-type {
   padding-top: 40px;
 }
-
 #contact {
   margin: 0px;
   height: 700px;
 }
-
 #contact .social ul li:first-of-type {
   padding-top: 55px;
   display: block;
 }
-
 #contact .social ul li {
   font-size: 1.6em;
 }
-
 #contact p {
   padding: 60px;
   font-size: 2em;
   text-align: center;
 }
-
-img:hover {
-  -webkit-filter: grayscale(0%);
-  -webkit-transition: .2s ease-in-out;
-  -moz-filter: grayscale(0%);
-  -moz-transition: .2s ease-in-out;
-  -o-filter: grayscale(0%);
-  -o-transition: .2s ease-in-out;
+/*hover effect is here*/
+.img {
+  position: relative;
+  border:none;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  margin: 10px;
+  moz-border-radius: 3%;
+  webkit-border-radius: 3%;
+  border-radius: 3%;
+  overflow: hidden;
 }
-
-img {
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: .2s ease-in-out;
-  -moz-filter: grayscale(100%);
-  -moz-transition: .2s ease-in-out;
-  -o-filter: grayscale(100%);
-  -o-transition: .2s ease-in-out;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all .4s;
+  overflow:hidden;
+  height: 0;
+  text-align: center;
+  font-size: 12px;
+}
+.img:hover .overlay,
+.overlay:hover {
+  height: 40%;
+  background: black;
+  opacity: 0.82;
+  color:white;
+  padding: 10px 10px 10px 10px;
 }

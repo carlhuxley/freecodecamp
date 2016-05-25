@@ -1,0 +1,43 @@
+<html>
+<style>
+.img {
+  position: relative;
+  border: 10px solid #f00;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  margin: 10px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all .2s;
+  overflow: hidden;
+  height: 0;
+  
+  text-align: center;
+  font-size: 50px;
+}
+.img:hover .overlay,
+.overlay:hover {
+  height: 70%;
+  background: white;
+  opacity: 0.8;
+}
+.img > img {
+  display: block;
+}
+</style>
+<a href="http://www.specialistmetalworkskills.com" target ="_blank">
+<div class="img">
+  <img src="http://www.placehold.it/300/eee" />
+  <div class="overlay">Hello!</div>
+</div>
+</a>
+<div class="img">
+  <img src="http://www.placehold.it/400/eee" />
+  <div class="overlay">Bye!</div>
+</div>
+</html>
