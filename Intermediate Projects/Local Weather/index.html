@@ -177,15 +177,14 @@
           var apiKey = '&appid=e7f7a0fd415caaf614569e4b18be50ca';
           var unit = '&units=' + tempUnit;
           var queryString = api + latLong + apiKey + unit;
-          //document.getElementById('coordinates').innerHTML = queryString;
+    
           /* Call to the openweather api to return weather data.*/
           $.ajax({
             url: queryString,
             success: function(result) {
               $("#location").html(result.name + ", " + result.sys.country);
               $("#description").html(result.weather[0].description);
-              $("#temperature").html(result.main.temp + '&degC')
-                /*$("#temperature").html("<p>" + result.weather[0].description + "Temperature: " + result.main.temp +"&deg;C</p>")*/
+              $("#temperature").html(result.main.temp + '&degC');
               temp = result.main.temp;
               //Weather icons change depending on the weather conditions
               var iconPng = result.weather[0].icon + '.png';
